@@ -253,11 +253,18 @@ public class NoteProvider extends ContentProvider {
 		boolean updateData=false;
 		switch (mMATCHER.match(uri)) {
 		case URI_NOTE:
-			
+			increaseNoteVersion(-1, selection, selectionArgs);
+			count=db.update(TABLE.NOTE, values,selection,selectionArgs);
 			
 			break;
 			
 		case URI_NOTE_ITEM:
+			id=uri.getPathSegments().get(1);
+			increaseNoteVersion(Long.valueOf(id), selection, selectionArgs);
+			count=db.update(TABLE.NOTE, values,NoteColoums.ID+"="+id+parseSelection(selection)
+					,selectionArgs);
+			
+			
 			
 			
 			break;
