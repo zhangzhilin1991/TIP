@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">myTip</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="tittle">便签</string>
+    <string name="edit">编辑</string>
+    <string name="content_hint">请输入内容</string>
+    
+    <string name="preference_key_init">preference_key_init</string>
+    
+    <string name="menu_create">添加便签</string>
+    <string name="menu_search">便签搜索</string>
+
+</resources>

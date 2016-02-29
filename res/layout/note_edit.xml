@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/toolbar"/>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        >
+        
+    <EditText 
+        android:id="@+id/edit_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/content_hint"
+        />
+    </ScrollView>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="2016 年  5 月  27 日  17：23：08 修改" />
+
+</LinearLayout>
